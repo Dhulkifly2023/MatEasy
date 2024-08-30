@@ -1,0 +1,139 @@
+:root {
+    --bg-color: #ffffffea;
+    --text-color: #22100d;
+    --color-second: #685f78;
+    --color-principal: #2fcdff;
+    --big-font: 3.8rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+a {
+    color: black;
+}
+
+.curso-container {
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-curso {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic-curso {
+    flex-direction: column;
+    margin: 0px 20px;
+    text-align: left;
+}
+
+.curso-tipo {
+    flex: 10%;
+    height: 300px;
+    padding: 10px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    overflow-x: none;
+    text-align: left;
+}
+
+.curso-tipo ul {
+    list-style-type: none;
+}
+
+.curso-tipo ul li {
+    padding: 5px;
+    font-size: bold;
+    font-weight: bold;
+}
+
+.curso-tipo li a:hover {
+    padding: 3px;
+    font-weight: bolder;
+    color: var(--color-principal);
+    border-left: 4px solid var(--color-principal);
+}
+
+.mostrar-cursos {
+    margin-left: 30px;
+    flex: 65%;
+    height: 400px;
+    border-radius: 0px 0px 0px 0px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.mostrar-cursos-content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0px 0px 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-curso {
+    height: 370px;
+    width: 235px;
+    margin: 5px;
+    justify-items: left;
+    align-items: content;
+    border-radius: 7px 7px 0px 0px;
+    cursor: pointer;
+}
+
+.card-image img {
+    height: 200px;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.card-image h3,
+p {
+    color: rgb(245, 57, 57);
+    padding-top: 6px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.card-image h4 {
+    font-weight: normal;
+    padding: 8px;
+    text-align: left;
+}
+
+.adic-pagar {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px;
+}
+
+.adic-pagar .carinho i {
+    border: 2px solid var(--color-principal);
+    border-radius: 7px;
+    font-size: 30px;
+    padding: 7px 10px;
+}
+
+.adic-pagar .botao-comprar {
+    border: 2px solid var(--color-principal);
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    background-color: var(--color-principal);
+    font-weight: bold;
+}
+
+.adic-pagar .botao-comprar:hover {
+    background-color: #8fe2fc;
+}
+
+.adic-pagar .carinho:hover {
+    transition: all .12s ease;
+    transform: scale(1.1);
+}
