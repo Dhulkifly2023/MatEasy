@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Online</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-content">
+            <div class="sign-in">
+                <h2>Logar</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>or use seu email e senha</p>
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Nome
+                        </label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <p class="forgot-password">Forget Your Password?</p>
+                    <button type="submit" class="btn-signin">Logar</button>
+                </form>
+            </div>
+            <div class="sign-up">
+                <h2>Hello, Friend!</h2>
+                <p>Register with your personal details to use all of site features</p>
+                <button class="btn-signup" id="show-signup">Cadastrar</button>
+            </div>
+
+            <div class="signini" id="signini" style="display:none;">
+                <h2>Bem vindo!</h2>
+                <p>Você já tem uma conta? Caso tenha, volte para fazer login.</p>
+                <button class="btn-back" id="show-login">Voltar ao login</button>
+            </div>
+
+            <div class="signup-form" id="signup-form" style="display:none;">
+                <h2>Cadastro</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <form>
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <button type="submit" class="btn-signup">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/login.js"></script>
+
+</body>
+
+</html>

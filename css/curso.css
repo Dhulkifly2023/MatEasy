@@ -8,16 +8,28 @@
     --p-font: 1.1rem;
 }
 
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 a {
     color: black;
 }
 
 .curso-container {
+    width: 90%;
+    padding: 0;
     height: auto;
     margin-top: 20px;
     justify-content: center;
+    font-family: 'montserrat', sans-serif;
     align-items: center;
     text-align: center;
+    padding-top: 90px;
+    margin-left: 3%;
 }
 
 .menu-curso {
@@ -35,8 +47,6 @@ a {
 
 .curso-tipo {
     flex: 10%;
-    height: 300px;
-    padding: 10px;
     overflow-y: scroll;
     background-color: rgb(255, 255, 255);
     overflow-x: none;
@@ -45,6 +55,7 @@ a {
 
 .curso-tipo ul {
     list-style-type: none;
+    padding-bottom: 600px;
 }
 
 .curso-tipo ul li {
@@ -62,11 +73,10 @@ a {
 
 .mostrar-cursos {
     margin-left: 30px;
-    flex: 65%;
-    height: 400px;
+    flex: 78%;
+    height: auto;
     border-radius: 0px 0px 0px 0px;
     margin-top: 20px;
-    overflow-y: auto;
 }
 
 .mostrar-cursos-content {

@@ -1,0 +1,131 @@
+:root {
+    --bg-color: #ffffffea;
+    --text-color: #22100d;
+    --color-second: #685f78;
+    --color-principal: #2fcdff;
+    --color-third: #f3f2f2;
+    --big-font: 3.8rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.carrinho {
+    display: flex;
+    padding: 0;
+    padding-top: 100px;
+    margin-left: 3%;
+    height: auto;
+    font-family: 'montserrat', sans-serif;
+    align-items: center;
+    gap: 15px
+}
+
+.carrinho .sobre_carrinho {
+    width: 70%;
+}
+
+.carrinho .sobre_pagamento {
+    position: fixed;
+    width: 20%;
+    top: 100px;
+    right: 50px;
+    background-color: #f3f2f2;
+    height: 150px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sobre_pagamento p {
+    font-size: 1.5 rem;
+    padding-top: 40px;
+}
+
+.sobre_pagamento p strong {
+    font-size: 16px;
+    margin-left: 10PX;
+    color: rgb(3, 3, 3);
+}
+
+.select-all {
+    height: 80px;
+    background-color: var(--color-third);
+    justify-content: left;
+    justify-items: left;
+    text-align: left;
+    padding: 10px;
+    margin: 8px;
+    margin-bottom: 0px;
+}
+
+.select_all_again {
+    display: flex;
+    padding-top: 16px;
+}
+
+.cursos_carinho {
+    padding-left: 10px;
+    margin: 8px;
+    height: auto;
+    background-color: var(--color-third);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--bg-color);
+    margin-right: 20PX;
+}
+
+.imagem-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.detalhes-item {
+    flex-grow: 1;
+}
+
+button.pagar {
+    margin: 10px 0px 0px 20px;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--color-principal);
+    border: none;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 2px solid #333;
+    border-radius: 10PX;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--color-principal);
+    border-color: black;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "✓";
+    color: white;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+}

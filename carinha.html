@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carinha.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <h1>Logo</h1>
+        </a>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Categorias</a></li>
+            <li><a href="curso.html">Cursos</a></li>
+            <li><a href="#">Sobre nos</a></li>
+        </ul>
+
+        <div class="icons-cabeca">
+            <a href="#"><i class='bx bx-cart' ></i></a>
+            <a href="login.html" class="btn-login">Logar</a>
+        </div>
+    </header>
+
+    <section class="carrinho">
+        <div class="sobre_carrinho">
+            <div class="select-all">
+                <h3 id="cart-title">Carrinho de Compras (0)</h3>
+                <div class="select_all_again">
+                    <input type="checkbox" id="selectAll">
+                    <p>Selecionar todos os Itens</p>
+                </div>
+            </div>
+            <div class="cursos_carinho">
+                <div class="item">
+                    <input type="checkbox" name="item" class="item-checkbox" data-price="300">
+                    <div class="imagem-item">
+                        <img src="imagem/curso-informatic.jpg" alt="">
+                    </div>
+                    <div class="detalhes-item">
+                        <h3>Curso de Matemática Básica</h3>
+                        <p>Descrição breve do curso.</p>
+                        <p><strong>Preço: MZ 300MT</strong></p>
+                    </div>
+                    <a href="#"><i class='bx bx-trash'></i></a>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="item" class="item-checkbox" data-price="300">
+                    <div class="imagem-item">
+                        <img src="imagem/curso-informatic.jpg" alt="">
+                    </div>
+                    <div class="detalhes-item">
+                        <h3>Curso de Matemática Básica</h3>
+                        <p>Descrição breve do curso.</p>
+                        <p><strong>Preço: MZ 300MT</strong></p>
+                    </div>
+                    <a href="#"><i class='bx bx-trash'></i></a>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="item" class="item-checkbox" data-price="300">
+                    <div class="imagem-item">
+                        <img src="imagem/curso-informatic.jpg" alt="">
+                    </div>
+                    <div class="detalhes-item">
+                        <h3>Curso de Matemática Básica</h3>
+                        <p>Descrição breve do curso.</p>
+                        <p><strong>Preço: MZ 300MT</strong></p>
+                    </div>
+                    <a href="#"><i class='bx bx-trash'></i></a>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="item" class="item-checkbox" data-price="300">
+                    <div class="imagem-item">
+                        <img src="imagem/curso-informatic.jpg" alt="">
+                    </div>
+                    <div class="detalhes-item">
+                        <h3>Curso de Matemática Básica</h3>
+                        <p>Descrição breve do curso.</p>
+                        <p><strong>Preço: MZ 300MT</strong></p>
+                    </div>
+                    <a href="#"><i class='bx bx-trash'></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sobre_pagamento">
+            <h3>RESUMO</h3>
+            <p>Total Estimado: <strong id="total">0MT</strong></p>
+            <button class="pagar">PAGAR</button>
+        </div>
+    </section>
+
+    <script src="js/carinha.js"></script>
+</body>
+
+</html>

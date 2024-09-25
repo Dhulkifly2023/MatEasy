@@ -32,7 +32,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: transparent;
+        background: white;
         padding: 23px 13%;
         transition: all .40s ease;
     }

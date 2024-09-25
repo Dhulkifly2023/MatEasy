@@ -1,0 +1,280 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'montserrat', sans-serif;
+    background-color: #f0f0f5;
+}
+
+:root {
+    --bg-color: #ffffffea;
+    --text-color: #22100d;
+    --color-second: #685f78;
+    --color-principal: #2fcdff;
+    --big-font: 3.8rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+.signup-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.signini {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-principal);
+    padding: 20px;
+    width: 40%;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 0px 90px 90px 0px;
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: 10%;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: var(--color-principal);
+    transition: all .40s ease;
+    transform: scale(1.2);
+}
+
+.btn-signup {
+    background-color: var(--color-principal);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 450px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in,
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.sign-in {
+    background-color: #ffffff;
+}
+
+.sign-up {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    border-radius: 90px 0px 0px 90px;
+}
+
+.sign-in h2,
+.sign-up h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.social-icons i:hover {
+    color: var(--color-principal);
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group input {
+    background-color: #eee;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 1rem;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: -2px;
+    font-size: 0.8rem;
+    color: var(--color-principal);
+}
+
+.forgot-password {
+    text-align: right;
+    color: var(--color-second);
+    cursor: pointer;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+    color: var(--);
+}
+
+.btn-signin,
+.btn-signup {
+    width: 40%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signin {
+    background-color: var(--color-principal);
+    color: #ffffff;
+}
+
+.btn-signin:hover {
+    background-color: var(--color-principal);
+    transition: all .40s ease;
+    transform: scale(1.2);
+}
+
+.btn-signup {
+    background-color: var(--color-principal);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-signup:hover {
+    background-color: var(--bg-color);
+    color: var(--color-principal);
+    transition: all .40s ease;
+    transform: scale(1.2);
+}
+
+form .btn-signup:hover {
+    background-color: var(--color-principal);
+    color: var(--bg-color);
+    transition: all .40s ease;
+    transform: scale(1.2);
+}
+
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .login-content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .sign-in,
+    .sign-up,
+    .signup-form,
+    .signini {
+        width: 100%;
+        padding: 15px;
+    }
+    .sign-up,
+    .signini {
+        border-radius: 0;
+    }
+    .btn-signin,
+    .btn-signup,
+    .btn-back {
+        width: 80%;
+    }
+}
+
+
+/* Estilos para smartphones (telas pequenas) */
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 100%;
+        padding: 10px;
+    }
+    .sign-in h2,
+    .sign-up h2,
+    .signup-form h2,
+    .signini h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .social-icons i {
+        font-size: 1.2rem;
+    }
+    .input-group input {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .btn-signin,
+    .btn-signup,
+    .btn-back {
+        width: 90%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
