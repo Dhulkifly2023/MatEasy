@@ -345,6 +345,8 @@
     .review p {
         color: #696969;
     }
+
+   
     /*  FOOTER  */
     
     footer {
@@ -440,4 +442,76 @@
     
      ::-webkit-scrollbar-track {
         background: #ffffff;
+    }
+
+    /*Resposividade*/
+
+    @media(max-width: 1050px){
+        :root{
+            --big-font: 3.2rem;
+            --h2-font: 2rem;
+            --p-font: 1rem;
+            transition: 1.s;
+            
+        }
+
+        .home{
+            height: 84vh;
+        }
+    }
+
+    @media(max-width: 1025px){
+        .icon-menu{
+            display: block;
+        }
+
+        .navbar{
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 300px;
+            height: 110vh;
+            background: var(--color-principal);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 170px 30px;
+            transition: all 0.1s ease;
+        }
+
+        .navbar a{
+            display: block;
+            margin: 1.3rem 0;
+            color: var(--bg-color);
+        }
+
+        .navbar a:hover{
+            color: var(--bg-color);
+            transform: translateY(-5px);
+        }
+
+        .navbar .open{
+            right: 0;
+        }
+
+    }
+
+    @media(max-width: 1025px){
+        .home{
+            height: 150vh;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .home-text{
+            padding-top: 20px;
+        }
+        .home-imagem{
+           text-align: center; 
+        }
+
+        .home-imagem img{
+            height: auto;
+            width: 100%;
+        }
     }
